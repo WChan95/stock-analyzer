@@ -22,6 +22,8 @@ for (let j = 0; j < posts_length; j++) {
   for (let i = 0; i < comments_length; i++) {
     let comment = comments[i];
     for (let k = 0; k < num_tickers; k++) {
+
+        //Need to add in natural language processing to filter more accurately;
       if (comment.includes(stocks[k].ticker)) {
         stocks[k].mentioned++;
       }
@@ -29,10 +31,10 @@ for (let j = 0; j < posts_length; j++) {
   }
 }
 
-for(let i = 0; i < stocks.length; i++){
-    if(stocks[i].mentioned > 0){
-        console.log(stocks[i])
-    }
+for (let i = 0; i < stocks.length; i++) {
+  if (stocks[i].mentioned > 0) {
+    console.log(stocks[i]);
+  }
 }
 
 //what we need to do next is check if a substring of this comment matches any of the tickers in NYSE
