@@ -1,0 +1,14 @@
+{
+  "name": "stock-analyzer",
+  "version": "1.0.0",
+  "description": "Scrapes reddit for stock ticker mentions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soejun",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^13.7.0"
+  }
+}
